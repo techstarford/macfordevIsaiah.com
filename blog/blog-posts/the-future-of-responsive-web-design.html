@@ -1,0 +1,560 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Future of Responsive Web Design | Macford Isaiah</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel = "stylesheet" href="/src/css/blog-css/the-future-of-responsive-web-design.css">
+        
+</head>
+<body>
+    <!-- Header -->
+    <header id="header">
+        <div class="container header-container">
+            <a href="index.html" class="logo">Macford<span>.</span></a>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="index.html#about">About</a></li>
+                <li><a href="index.html#portfolio">Portfolio</a></li>
+                <li><a href="index.html#blog">Blog</a></li>
+                <li><a href="index.html#testimonials">Testimonials</a></li>
+                <li><a href="index.html#contact">Contact</a></li>
+            </ul>
+            <div class="hamburger">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </header>
+
+    <!-- Blog Article Content -->
+    <div class="container">
+        <div class="blog-article-container">
+            <!-- Main Content -->
+            <main class="blog-main-content">
+                <article class="blog-article">
+                    <div class="article-header">
+                        <h1>The Future of Responsive Web Design</h1>
+                        <div class="article-meta">
+                            <span class="article-meta-item"><i class="far fa-user"></i> Macford Isaiah</span>
+                            <span class="article-meta-item"><i class="far fa-calendar-alt"></i> June 15, 2023</span>
+                            <span class="article-meta-item"><i class="far fa-clock"></i> 8 min read</span>
+                        </div>
+                        <div class="article-tags">
+                            <a href="#" class="article-tag">CSS</a>
+                            <a href="#" class="article-tag">Responsive</a>
+                            <a href="#" class="article-tag">UI/UX</a>
+                            <a href="#" class="article-tag">Frontend</a>
+                        </div>
+                        <div class="featured-image">
+                            <img src="https://images.unsplash.com/photo-1547658719-da2b51169166?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1064&q=80" alt="Responsive Web Design">
+                        </div>
+                    </div>
+
+                    <div class="article-content">
+                        <p>Responsive web design has come a long way since Ethan Marcotte first coined the term in 2010. What started as a simple concept of fluid grids, flexible images, and media queries has evolved into a sophisticated discipline that continues to shape how we build for the web. As we look toward the future, several emerging trends and technologies are poised to redefine what responsive design means and how we implement it.</p>
+
+                        <h2>The Evolution of Responsive Design</h2>
+                        <p>Before we explore the future, let's briefly reflect on how responsive design has evolved:</p>
+                        
+                        <ul>
+                            <li><strong>2010-2012:</strong> The early days focused on basic media queries and fluid layouts</li>
+                            <li><strong>2013-2015:</strong> Mobile-first approach gained popularity, frameworks like Bootstrap emerged</li>
+                            <li><strong>2016-2018:</strong> Responsive images became standard, performance became a priority</li>
+                            <li><strong>2019-2021:</strong> CSS Grid and Flexbox revolutionized layout possibilities</li>
+                            <li><strong>2022-Present:</strong> Container queries, aspect ratio, and new viewport units expanded capabilities</li>
+                        </ul>
+
+                        <div class="featured-image">
+                            <img src="https://images.unsplash.com/photo-1559028012-481c04fa702d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1136&q=80" alt="Responsive Design Evolution">
+                        </div>
+
+                        <h2>Emerging Technologies Shaping the Future</h2>
+
+                        <h3>1. Container Queries</h3>
+                        <p>Container queries are perhaps the most significant advancement in responsive design since media queries. While media queries respond to viewport size, container queries allow elements to respond to the size of their containing element.</p>
+
+                        <div class="code-block">
+                            /* Traditional media query */
+                            @media (min-width: 768px) {
+                                .card { /* styles */ }
+                            }
+                            
+                            /* Container query */
+                            .card-container {
+                                container-type: inline-size;
+                            }
+                            
+                            @container (min-width: 400px) {
+                                .card { /* styles */ }
+                            }
+                        </div>
+
+                        <p>This enables truly modular, component-based responsive design where components can adapt to their context regardless of viewport size.</p>
+
+                        <h3>2. CSS Nesting</h3>
+                        <p>CSS nesting, now supported in modern browsers, allows for more maintainable and readable responsive styles:</p>
+
+                        <div class="code-block">
+                            .card {
+                                /* base styles */
+                                
+                                @media (min-width: 768px) {
+                                    /* tablet styles */
+                                }
+                                
+                                @container (min-width: 400px) {
+                                    /* container query styles */
+                                }
+                            }
+                        </div>
+
+                        <h3>3. Viewport Units and Dynamic Scaling</h3>
+                        <p>New viewport units (lvw, lvh, svw, svh, dvw, dvh) and the min(), max(), and clamp() functions enable more sophisticated responsive typography and spacing that adapts to different device constraints.</p>
+
+                        <h2>The Rise of Adaptive Interfaces</h2>
+                        <p>Future responsive design will move beyond just adapting to screen size to creating interfaces that adapt to:</p>
+                        
+                        <ul>
+                            <li><strong>User preferences:</strong> Dark mode, reduced motion, contrast preferences</li>
+                            <li><strong>Device capabilities:</strong> Touch vs. mouse, foldable screens, device posture</li>
+                            <li><strong>Environmental factors:</strong> Ambient light, network conditions</li>
+                            <li><strong>Contextual awareness:</strong> Location, time of day, user behavior patterns</li>
+                        </ul>
+
+                        <div class="featured-image">
+                            <img src="https://images.unsplash.com/photo-1551434678-e076c223a692?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80" alt="Adaptive Interfaces">
+                        </div>
+
+                        <blockquote>
+                            "The future of responsive design isn't just about responding to screen size, but about creating experiences that adapt to the full context of each user's needs and environment." — Web Design Thought Leader
+                        </blockquote>
+
+                        <h2>Performance as a Responsive Consideration</h2>
+                        <p>Future responsive design will increasingly consider performance as a first-class responsive dimension:</p>
+                        
+                        <ul>
+                            <li><strong>Conditional loading:</strong> Based on network conditions (using the Network Information API)</li>
+                            <li><strong>Adaptive media:</strong> Serving different image/video quality based on device capabilities</li>
+                            <li><strong>Progressive enhancement:</strong> Core functionality works everywhere, enhanced features for capable devices</li>
+                        </ul>
+
+                        <h2>Tools and Workflows</h2>
+                        <p>The tools we use to create responsive designs are also evolving:</p>
+                        
+                        <ul>
+                            <li><strong>Design tools:</strong> Figma's responsive auto-layout, Adobe XD's responsive resize</li>
+                            <li><strong>Development tools:</strong> Browser DevTools with container query debugging</li>
+                            <li><strong>Testing tools:</strong> Automated responsive testing across device matrices</li>
+                        </ul>
+
+                        <h2>Conclusion</h2>
+                        <p>The future of responsive web design is exciting and multifaceted. As web technologies continue to evolve, we'll move beyond simple screen size adaptation to create truly contextual experiences that respond to the full spectrum of user needs, device capabilities, and environmental factors. By embracing these emerging technologies and approaches, we can build web experiences that are not just responsive, but adaptive, inclusive, and performant across the ever-expanding landscape of digital devices.</p>
+                    </div>
+
+                    <footer class="article-footer">
+                        <div class="article-author">
+                            <div class="author-avatar">
+                                <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=774&q=80" alt="Macford Isaiah">
+                            </div>
+                            <div class="author-info">
+                                <h4>Macford Isaiah</h4>
+                                <p>Full-stack developer and graphic designer with over 5 years of experience creating responsive web applications and visual designs that help businesses establish their digital presence.</p>
+                                <div class="author-social">
+                                    <a href="#"><i class="fab fa-twitter"></i></a>
+                                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                                    <a href="#"><i class="fab fa-github"></i></a>
+                                    <a href="#"><i class="fab fa-dribbble"></i></a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="article-navigation">
+                            <a href="#" class="nav-link prev">
+                                <i class="fas fa-arrow-left"></i>
+                                <div>
+                                    <span>Previous Post</span>
+                                    <h5>Color Psychology in Branding</h5>
+                                </div>
+                            </a>
+                            <a href="#" class="nav-link next">
+                                <div>
+                                    <span>Next Post</span>
+                                    <h5>JavaScript Frameworks Comparison 2023</h5>
+                                </div>
+                                <i class="fas fa-arrow-right"></i>
+                            </a>
+                        </div>
+
+                        <div class="related-articles">
+                            <h3>Related Articles</h3>
+                            <div class="related-grid">
+                                <article class="related-article">
+                                    <div class="related-article-img">
+                                        <img src="https://images.unsplash.com/photo-1542744173-8e7e53415bb0?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80" alt="Color Psychology">
+                                    </div>
+                                    <div class="related-article-content">
+                                        <h4>Color Psychology in Branding</h4>
+                                        <p>How different colors affect consumer perception and behavior in branding and marketing materials.</p>
+                                        <div class="related-article-meta">
+                                            <span><i class="far fa-calendar-alt"></i> May 28, 2023</span>
+                                            <span><i class="far fa-clock"></i> 6 min read</span>
+                                        </div>
+                                    </div>
+                                </article>
+                                <article class="related-article">
+                                    <div class="related-article-img">
+                                        <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80" alt="JavaScript Frameworks">
+                                    </div>
+                                    <div class="related-article-content">
+                                        <h4>JavaScript Frameworks Comparison 2023</h4>
+                                        <p>A comprehensive comparison of React, Vue, Angular, and Svelte for modern web development.</p>
+                                        <div class="related-article-meta">
+                                            <span><i class="far fa-calendar-alt"></i> May 10, 2023</span>
+                                            <span><i class="far fa-clock"></i> 10 min read</span>
+                                        </div>
+                                    </div>
+                                </article>
+                                <article class="related-article">
+                                    <div class="related-article-img">
+                                        <img src="https://images.unsplash.com/photo-1467232004584-a241de8bcf5d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1169&q=80" alt="Minimalism in Web Design">
+                                    </div>
+                                    <div class="related-article-content">
+                                        <h4>Minimalism in Web Design</h4>
+                                        <p>Implementing minimalist design principles to create clean, functional websites that enhance UX.</p>
+                                        <div class="related-article-meta">
+                                            <span><i class="far fa-calendar-alt"></i> April 22, 2023</span>
+                                            <span><i class="far fa-clock"></i> 7 min read</span>
+                                        </div>
+                                    </div>
+                                </article>
+                            </div>
+                        </div>
+
+                        <div class="comments-section">
+                            <h3>Comments (3)</h3>
+                            <ul class="comments-list">
+                                <li class="comment">
+                                    <div class="comment-avatar">
+                                        <img src="https://randomuser.me/api/portraits/women/43.jpg" alt="Sarah Johnson">
+                                    </div>
+                                    <div class="comment-content">
+                                        <h5>Sarah Johnson</h5>
+                                        <div class="comment-meta">
+                                            <span><i class="far fa-calendar-alt"></i> June 17, 2023</span>
+                                            <span><i class="far fa-clock"></i> 10:24 AM</span>
+                                        </div>
+                                        <div class="comment-text">
+                                            <p>Great article! I've been using container queries in my recent projects and they've completely changed how I approach responsive design. The ability to create truly modular components is game-changing.</p>
+                                        </div>
+                                        <button class="reply-btn"><i class="fas fa-reply"></i> Reply</button>
+                                    </div>
+                                </li>
+                                <li class="comment">
+                                    <div class="comment-avatar">
+                                        <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="Michael Brown">
+                                    </div>
+                                    <div class="comment-content">
+                                        <h5>Michael Brown</h5>
+                                        <div class="comment-meta">
+                                            <span><i class="far fa-calendar-alt"></i> June 16, 2023</span>
+                                            <span><i class="far fa-clock"></i> 3:45 PM</span>
+                                        </div>
+                                        <div class="comment-text">
+                                            <p>Excellent overview of where responsive design is heading. I'm particularly excited about the potential of adaptive interfaces that respond to more than just screen size. Do you have any examples of sites already implementing these advanced techniques?</p>
+                                        </div>
+                                        <button class="reply-btn"><i class="fas fa-reply"></i> Reply</button>
+                                        
+                                        <div class="comment-reply">
+                                            <div class="comment-avatar">
+                                                <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=774&q=80" alt="Macford Isaiah">
+                                            </div>
+                                            <div class="comment-content">
+                                                <h5>Macford Isaiah</h5>
+                                                <div class="comment-meta">
+                                                    <span><i class="far fa-calendar-alt"></i> June 16, 2023</span>
+                                                    <span><i class="far fa-clock"></i> 5:30 PM</span>
+                                                </div>
+                                                <div class="comment-text">
+                                                    <p>Thanks for your question, Michael! A great example is the website of the design tool "Figma" which adapts its interface based on whether you're using a touch device or mouse. Also, check out "Smashing Magazine" which uses container queries in their article layouts.</p>
+                                                </div>
+                                                <button class="reply-btn"><i class="fas fa-reply"></i> Reply</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="comment">
+                                    <div class="comment-avatar">
+                                        <img src="https://randomuser.me/api/portraits/women/65.jpg" alt="Emily Rodriguez">
+                                    </div>
+                                    <div class="comment-content">
+                                        <h5>Emily Rodriguez</h5>
+                                        <div class="comment-meta">
+                                            <span><i class="far fa-calendar-alt"></i> June 15, 2023</span>
+                                            <span><i class="far fa-clock"></i> 7:12 PM</span>
+                                        </div>
+                                        <div class="comment-text">
+                                            <p>This is such a comprehensive look at responsive design's future. I'd love to see a follow-up article diving deeper into performance considerations for responsive sites, especially regarding image optimization strategies.</p>
+                                        </div>
+                                        <button class="reply-btn"><i class="fas fa-reply"></i> Reply</button>
+                                    </div>
+                                </li>
+                            </ul>
+
+                            <div class="comment-form">
+                                <h3>Leave a Comment</h3>
+                                <form>
+                                    <div class="form-group">
+                                        <label for="comment-name">Name</label>
+                                        <input type="text" id="comment-name" class="form-control" required>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="comment-email">Email</label>
+                                        <input type="email" id="comment-email" class="form-control" required>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="comment-message">Your Comment</label>
+                                        <textarea id="comment-message" class="form-control" rows="5" required></textarea>
+                                    </div>
+                                    <button type="submit" class="btn">Post Comment</button>
+                                </form>
+                            </div>
+                        </div>
+                    </footer>
+                </article>
+            </main>
+
+            <!-- Sidebar -->
+            <aside class="blog-sidebar">
+                <div class="sidebar-widget about-widget">
+                    <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=774&q=80" alt="Macford Isaiah">
+                    <h3>Macford Isaiah</h3>
+                    <p>Full-stack developer and graphic designer passionate about creating beautiful, functional digital experiences.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#"><i class="fab fa-github"></i></a>
+                        <a href="#"><i class="fab fa-dribbble"></i></a>
+                    </div>
+                </div>
+
+                <div class="sidebar-widget">
+                    <h3>Categories</h3>
+                    <ul class="categories-list">
+                        <li><a href="#">Web Development <span>12</span></a></li>
+                        <li><a href="#">Graphic Design <span>8</span></a></li>
+                        <li><a href="#">UI/UX Design <span>5</span></a></li>
+                        <li><a href="#">Frontend <span>7</span></a></li>
+                        <li><a href="#">Backend <span>3</span></a></li>
+                        <li><a href="#">Branding <span>4</span></a></li>
+                    </ul>
+                </div>
+
+                <div class="sidebar-widget">
+                    <h3>Popular Posts</h3>
+                    <ul class="popular-posts">
+                        <li class="popular-post">
+                            <div class="popular-post-img">
+                                <img src="https://images.unsplash.com/photo-1542744173-8e7e53415bb0?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80" alt="Popular Post">
+                            </div>
+                            <div class="popular-post-content">
+                                <h4><a href="#">Color Psychology in Branding</a></h4>
+                                <span>May 28, 2023</span>
+                            </div>
+                        </li>
+                        <li class="popular-post">
+                            <div class="popular-post-img">
+                                <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80" alt="Popular Post">
+                            </div>
+                            <div class="popular-post-content">
+                                <h4><a href="#">JavaScript Frameworks Comparison</a></h4>
+                                <span>May 10, 2023</span>
+                            </div>
+                        </li>
+                        <li class="popular-post">
+                            <div class="popular-post-img">
+                                <img src="https://images.unsplash.com/photo-1467232004584-a241de8bcf5d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1169&q=80" alt="Popular Post">
+                            </div>
+                            <div class="popular-post-content">
+                                <h4><a href="#">Minimalism in Web Design</a></h4>
+                                <span>April 22, 2023</span>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="sidebar-widget">
+                    <h3>Tags</h3>
+                    <div class="tags-list">
+                        <a href="#">CSS</a>
+                        <a href="#">JavaScript</a>
+                        <a href="#">React</a>
+                        <a href="#">Vue</a>
+                        <a href="#">UI/UX</a>
+                        <a href="#">Responsive</a>
+                        <a href="#">Design</a>
+                        <a href="#">Typography</a>
+                        <a href="#">Branding</a>
+                        <a href="#">Performance</a>
+                    </div>
+                </div>
+
+                <div class="sidebar-widget">
+                    <h3>Newsletter</h3>
+                    <p>Subscribe to my newsletter to get the latest updates and articles delivered to your inbox.</p>
+                    <form class="newsletter-form">
+                        <input type="email" placeholder="Your Email" class="form-control" required>
+                        <button type="submit" class="btn" style="width: 100%; margin-top: 10px;">Subscribe</button>
+                    </form>
+                </div>
+            </aside>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-container">
+                <div class="footer-col">
+                    <h3>Macford Isaiah</h3>
+                    <p>Full-stack web developer and graphic designer creating beautiful, functional digital experiences that help businesses thrive online.</p>
+                </div>
+                <div class="footer-col">
+                    <h3>Quick Links</h3>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="index.html#about">About</a></li>
+                        <li><a href="index.html#portfolio">Portfolio</a></li>
+                        <li><a href="index.html#blog">Blog</a></li>
+                        <li><a href="index.html#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h3>Services</h3>
+                    <ul class="footer-links">
+                        <li><a href="#">Web Development</a></li>
+                        <li><a href="#">UI/UX Design</a></li>
+                        <li><a href="#">Graphic Design</a></li>
+                        <li><a href="#">Branding</a></li>
+                        <li><a href="#">Consulting</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h3>Contact</h3>
+                    <ul class="footer-links">
+                        <li><a href="mailto:techstarford@gmail.com">techstarford@gmail.com</a></li>
+                        <li><a href="tel:+256770509867">+256 770 509 867</a></li>
+                        <li><a href="tel:+256784349428">+256 784 349 428</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2023 Macford Isaiah. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <div class="back-to-top">
+        <i class="fas fa-arrow-up"></i>
+    </div>
+
+    <!-- JavaScript -->
+    <script>
+        // Mobile Navigation
+        const hamburger = document.querySelector('.hamburger');
+        const navLinks = document.querySelector('.nav-links');
+
+        hamburger.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
+            hamburger.innerHTML = navLinks.classList.contains('active') ? 
+                '<i class="fas fa-times"></i>' : '<i class="fas fa-bars"></i>';
+        });
+
+        // Close mobile menu when clicking a nav link
+        document.querySelectorAll('.nav-links a').forEach(link => {
+            link.addEventListener('click', () => {
+                navLinks.classList.remove('active');
+                hamburger.innerHTML = '<i class="fas fa-bars"></i>';
+            });
+        });
+
+        // Sticky Header
+        window.addEventListener('scroll', () => {
+            const header = document.getElementById('header');
+            header.classList.toggle('scrolled', window.scrollY > 0);
+        });
+
+        // Back to Top Button
+        const backToTopBtn = document.querySelector('.back-to-top');
+
+        window.addEventListener('scroll', () => {
+            if (window.pageYOffset > 300) {
+                backToTopBtn.classList.add('active');
+            } else {
+                backToTopBtn.classList.remove('active');
+            }
+        });
+
+        backToTopBtn.addEventListener('click', () => {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        });
+
+        // Smooth Scrolling for Anchor Links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                
+                const targetId = this.getAttribute('href');
+                if (targetId === '#') return;
+                
+                const targetElement = document.querySelector(targetId);
+                if (targetElement) {
+                    window.scrollTo({
+                        top: targetElement.offsetTop - 80,
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+
+        // Comment Form Submission
+        const commentForm = document.querySelector('.comment-form form');
+        
+        commentForm.addEventListener('submit', (e) => {
+            e.preventDefault();
+            
+            // Get form values
+            const name = document.getElementById('comment-name').value;
+            const email = document.getElementById('comment-email').value;
+            const message = document.getElementById('comment-message').value;
+            
+            // Here you would typically send the data to a server
+            // For this example, we'll just log it and show an alert
+            console.log({ name, email, message });
+            
+            alert('Thank you for your comment! It will be visible after moderation.');
+            commentForm.reset();
+        });
+
+        // Newsletter Form Submission
+        const newsletterForm = document.querySelector('.newsletter-form');
+        
+        newsletterForm.addEventListener('submit', (e) => {
+            e.preventDefault();
+            
+            const email = newsletterForm.querySelector('input[type="email"]').value;
+            
+            // Here you would typically send the email to a server
+            console.log('Subscribed email:', email);
+            
+            alert('Thank you for subscribing to my newsletter!');
+            newsletterForm.reset();
+        });
+    </script>
+</body>
+</html>

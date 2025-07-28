@@ -1,0 +1,1210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Macford Isaiah | Full-Stack Developer & Graphics Designer</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css">
+    <link rel="stylesheet" href="/src/css/style.css">
+
+    <!-- JavaScript -->
+<script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+<script src="src/js/main.js"></script>
+</head>
+<body>
+    <!-- Header -->
+    <header id="header">
+        <div class="container header-container">
+            <a href="#" class="logo">Macford<span>.</span></a>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#blog">Blog</a></li>
+                <li><a href="#testimonials">Testimonials</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="hamburger">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="container">
+            <div class="hero-content">
+                <h1>Hi, I'm <span>Macford Isaiah</span></h1>
+                <h2>Full-Stack Developer & Graphics Designer</h2>
+                <p>I create beautiful, functional websites and stunning visual designs that help businesses stand out in the digital world.</p>
+                
+                <!-- Search Bar -->
+                <div class="search-container">
+                    <input type="text" class="search-bar" placeholder="Search my portfolio...">
+                    <button class="search-btn"><i class="fas fa-search"></i></button>
+                </div>
+                
+                <div class="hero-btns">
+                    <a href="#portfolio" class="btn">View My Work</a>
+                    <a href="#contact" class="btn btn-outline">Contact Me</a>
+                </div>
+                <div class="social-icons">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-pinterest"></i></a>
+                    <a href="#"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <img src="src/images/macford-isaiah-ninshaba.jpg" alt="Hero Image" class="lazy" loading="lazy">
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about" id="about">
+        <div class="container">
+            <div class="section-title">
+                <h2>About Me</h2>
+                <p>Get to know more about me, my skills, and what I can do for you</p>
+            </div>
+            <div class="about-container">
+                <div class="about-image">
+                    <img src="src/images/macford-isaiah-ninshaba.jpg" alt="Macford Isaiah" class="lazy" loading="lazy">
+                </div>
+                <div class="about-content">
+                    <h2>Who Am I?</h2>
+                    <p>I'm Macford Isaiah, a passionate full-stack web developer and graphics designer based in Uganda. With a keen eye for detail and a love for creating beautiful, functional designs, I help businesses establish their online presence.</p>
+                    <p>My approach combines technical expertise with creative thinking to deliver solutions that not only look great but also perform exceptionally well across all devices.</p>
+                    <div class="skills">
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span>Web Development</span>
+                                <span>95%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 95%;"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span>UI/UX Design</span>
+                                <span>90%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 90%;"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span>Graphic Design</span>
+                                <span>85%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 85%;"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span>Branding</span>
+                                <span>80%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 80%;"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section class="portfolio" id="portfolio">
+        <div class="container">
+            <div class="section-title">
+                <h2>My Portfolio</h2>
+                <p>Explore my latest projects in web development and graphic design</p>
+            </div>
+            <div class="portfolio-filter">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="web">Web Development</button>
+                <button class="filter-btn" data-filter="graphics">Graphic Design</button>
+            </div>
+            <div class="portfolio-grid">
+                <!-- Graphic Design Items -->
+                <div class="portfolio-item" data-category="graphics">
+                    <div class="portfolio-img">
+                        <img src="https://images.unsplash.com/photo-1611162617213-7d7a39e9b1d7?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1074&q=80" alt="Logo Design" class="lazy" loading="lazy">
+                    </div>
+                    <div class="portfolio-info">
+                        <h3>Logo Design</h3>
+                        <p>Modern logo for a tech startup company</p>
+                        <div class="portfolio-btns">
+                            <button class="btn view-btn" data-id="1">View Details</button>
+                            <button class="like-btn"><i class="far fa-heart"></i> <span class="like-count">24</span></button>
+                            <button class="favorite-btn"><i class="far fa-star"></i></button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="portfolio-item" data-category="graphics">
+                    <div class="portfolio-img">
+                        <img src="https://images.unsplash.com/photo-1530103862676-de8c9debad1d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80" alt="Birthday Flyer" class="lazy" loading="lazy">
+                    </div>
+                    <div class="portfolio-info">
+                        <h3>Birthday Flyer</h3>
+                        <p>Elegant birthday invitation flyer design</p>
+                        <div class="portfolio-btns">
+                            <button class="btn view-btn" data-id="2">View Details</button>
+                            <button class="like-btn"><i class="far fa-heart"></i> <span class="like-count">18</span></button>
+                            <button class="favorite-btn"><i class="far fa-star"></i></button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="portfolio-item" data-category="graphics">
+                    <div class="portfolio-img">
+                        <img src="https://images.unsplash.com/photo-1551650975-87deedd944c3?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1074&q=80" alt="Success Card" class="lazy" loading="lazy">
+                    </div>
+                    <div class="portfolio-info">
+                        <h3>Success Card</h3>
+                        <p>Corporate congratulatory card design</p>
+                        <div class="portfolio-btns">
+                            <button class="btn view-btn" data-id="3">View Details</button>
+                            <button class="like-btn"><i class="far fa-heart"></i> <span class="like-count">32</span></button>
+                            <button class="favorite-btn"><i class="far fa-star"></i></button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="portfolio-item" data-category="graphics">
+                    <div class="portfolio-img">
+                        <img src="https://images.unsplash.com/photo-1518895949257-7621c3c786d7?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1188&q=80" alt="Calendar" class="lazy" loading="lazy">
+                    </div>
+                    <div class="portfolio-info">
+                        <h3>Calendar</h3>
+                        <p>2024 corporate calendar design</p>
+                        <div class="portfolio-btns">
+                            <button class="btn view-btn" data-id="4">View Details</button>
+                            <button class="like-btn"><i class="far fa-heart"></i> <span class="like-count">15</span></button>
+                            <button class="favorite-btn"><i class="far fa-star"></i></button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="portfolio-item" data-category="graphics">
+                    <div class="portfolio-img">
+                        <img src="https://images.unsplash.com/photo-1561212024-cb9ad0c33195?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80" alt="Poster" class="lazy" loading="lazy">
+                    </div>
+                    <div class="portfolio-info">
+                        <h3>Poster</h3>
+                        <p>Music concert promotional poster</p>
+                        <div class="portfolio-btns">
+                            <button class="btn view-btn" data-id="5">View Details</button>
+                            <button class="like-btn"><i class="far fa-heart"></i> <span class="like-count">27</span></button>
+                            <button class="favorite-btn"><i class="far fa-star"></i></button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="portfolio-item" data-category="graphics">
+                    <div class="portfolio-img">
+                        <img src="https://images.unsplash.com/photo-1611162616305-c69b3fa7fbe0?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1074&q=80" alt="Business Card" class="lazy" loading="lazy">
+                    </div>
+                    <div class="portfolio-info">
+                        <h3>Business Card</h3>
+                        <p>Minimalist business card design</p>
+                        <div class="portfolio-btns">
+                            <button class="btn view-btn" data-id="6">View Details</button>
+                            <button class="like-btn"><i class="far fa-heart"></i> <span class="like-count">21</span></button>
+                            <button class="favorite-btn"><i class="far fa-star"></i></button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Web Development Items -->
+                <div class="portfolio-item" data-category="web">
+                    <div class="portfolio-img">
+                        <img src="https://images.unsplash.com/photo-1559028012-481c04fa702d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1136&q=80" alt="Modern Portfolio Website" class="lazy" loading="lazy">
+                    </div>
+                    <div class="portfolio-info">
+                        <h3>Modern Portfolio</h3>
+                        <p>Responsive portfolio website design</p>
+                        <div class="portfolio-btns">
+                            <button class="btn view-btn" data-id="7">View Details</button>
+                            <button class="like-btn"><i class="far fa-heart"></i> <span class="like-count">45</span></button>
+                            <button class="favorite-btn"><i class="far fa-star"></i></button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="portfolio-item" data-category="web">
+                    <div class="portfolio-img">
+                        <img src="https://images.unsplash.com/photo-1551434678-e076c223a692?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80" alt="Ronvick E-Commerce" class="lazy" loading="lazy">
+                    </div>
+                    <div class="portfolio-info">
+                        <h3>Ronvick E-Commerce</h3>
+                        <p>Gas cylinder e-commerce platform</p>
+                        <div class="portfolio-btns">
+                            <button class="btn view-btn" data-id="8">View Details</button>
+                            <button class="like-btn"><i class="far fa-heart"></i> <span class="like-count">38</span></button>
+                            <button class="favorite-btn"><i class="far fa-star"></i></button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="portfolio-item" data-category="web">
+                    <div class="portfolio-img">
+                        <img src="https://images.unsplash.com/photo-1467232004584-a241de8bcf5d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1169&q=80" alt="Graphics Design Website" class="lazy" loading="lazy">
+                    </div>
+                    <div class="portfolio-info">
+                        <h3>Graphics Design Website</h3>
+                        <p>Showcase website for design agency</p>
+                        <div class="portfolio-btns">
+                            <button class="btn view-btn" data-id="9">View Details</button>
+                            <button class="like-btn"><i class="far fa-heart"></i> <span class="like-count">29</span></button>
+                            <button class="favorite-btn"><i class="far fa-star"></i></button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="portfolio-item" data-category="web">
+                    <div class="portfolio-img">
+                        <img src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80" alt="Sesero Engineering" class="lazy" loading="lazy">
+                    </div>
+                    <div class="portfolio-info">
+                        <h3>Sesero Engineering</h3>
+                        <p>Construction company website</p>
+                        <div class="portfolio-btns">
+                            <button class="btn view-btn" data-id="10">View Details</button>
+                            <button class="like-btn"><i class="far fa-heart"></i> <span class="like-count">33</span></button>
+                            <button class="favorite-btn"><i class="far fa-star"></i></button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="portfolio-item" data-category="web">
+                    <div class="portfolio-img">
+                        <img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1171&q=80" alt="Learnoford Unihub" class="lazy" loading="lazy">
+                    </div>
+                    <div class="portfolio-info">
+                        <h3>Learnoford Unihub</h3>
+                        <p>Educational platform for students</p>
+                        <div class="portfolio-btns">
+                            <button class="btn view-btn" data-id="11">View Details</button>
+                            <button class="like-btn"><i class="far fa-heart"></i> <span class="like-count">42</span></button>
+                            <button class="favorite-btn"><i class="far fa-star"></i></button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="portfolio-item" data-category="web">
+                    <div class="portfolio-img">
+                        <img src="https://images.unsplash.com/photo-1522542550221-31fd19575a2d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80" alt="Pixel Vault" class="lazy" loading="lazy">
+                    </div>
+                    <div class="portfolio-info">
+                        <h3>Pixel Vault</h3>
+                        <p>Digital asset management system</p>
+                        <div class="portfolio-btns">
+                            <button class="btn view-btn" data-id="12">View Details</button>
+                            <button class="like-btn"><i class="far fa-heart"></i> <span class="like-count">36</span></button>
+                            <button class="favorite-btn"><i class="far fa-star"></i></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Modals -->
+    <!-- Modal 1: Logo Design -->
+    <div class="modal" id="modal-1">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3>Logo Design</h3>
+                <button class="close-modal">&times;</button>
+            </div>
+            <div class="modal-body">
+                <div class="modal-row">
+                    <div class="modal-img">
+                        <img src="https://images.unsplash.com/photo-1611162617213-7d7a39e9b1d7?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1074&q=80" alt="Logo Design" loading="lazy">
+                    </div>
+                    <div class="modal-details">
+                        <h4>Project Details</h4>
+                        <p>Created a modern and minimalist logo for a tech startup specializing in AI solutions. The design incorporates geometric shapes to represent innovation and technology, with a color scheme that conveys trust and professionalism.</p>
+                        <div class="tech-list">
+                            <span class="tech-item">Adobe Illustrator</span>
+                            <span class="tech-item">Brand Identity</span>
+                            <span class="tech-item">Vector Graphics</span>
+                            <span class="tech-item">Color Theory</span>
+                        </div>
+                        <div class="download-options">
+                            <h5>Download Options:</h5>
+                            <div class="download-types">
+                                <span class="download-type">PNG</span>
+                                <span class="download-type">SVG</span>
+                                <span class="download-type">EPS</span>
+                                <span class="download-type">AI</span>
+                                <span class="download-type">PDF</span>
+                            </div>
+                        </div>
+                        <div class="modal-btns">
+                            <button class="btn"><i class="fas fa-download"></i> Download</button>
+                            <button class="btn btn-outline"><i class="fas fa-share-alt"></i> Share</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal 2: Birthday Flyer -->
+    <div class="modal" id="modal-2">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3>Birthday Flyer</h3>
+                <button class="close-modal">&times;</button>
+            </div>
+            <div class="modal-body">
+                <div class="modal-row">
+                    <div class="modal-img">
+                        <img src="https://images.unsplash.com/photo-1530103862676-de8c9debad1d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80" alt="Birthday Flyer" loading="lazy">
+                    </div>
+                    <div class="modal-details">
+                        <h4>Project Details</h4>
+                        <p>Designed an elegant birthday invitation flyer for a luxury event. The design features gold foil accents and a sophisticated color palette to convey exclusivity. The typography was carefully selected to complement the luxurious theme, with ample white space to ensure readability.</p>
+                        <div class="tech-list">
+                            <span class="tech-item">Adobe Photoshop</span>
+                            <span class="tech-item">Typography</span>
+                            <span class="tech-item">Print Design</span>
+                            <span class="tech-item">Mockups</span>
+                        </div>
+                        <div class="download-options">
+                            <h5>Download Options:</h5>
+                            <div class="download-types">
+                                <span class="download-type">JPG (High Res)</span>
+                                <span class="download-type">PNG (Transparent)</span>
+                                <span class="download-type">PSD</span>
+                                <span class="download-type">Print Ready PDF</span>
+                            </div>
+                        </div>
+                        <div class="modal-btns">
+                            <button class="btn"><i class="fas fa-download"></i> Download</button>
+                            <button class="btn btn-outline"><i class="fas fa-share-alt"></i> Share</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal 3: Success Card -->
+    <div class="modal" id="modal-3">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3>Success Card</h3>
+                <button class="close-modal">&times;</button>
+            </div>
+            <div class="modal-body">
+                <div class="modal-row">
+                    <div class="modal-img">
+                        <img src="https://images.unsplash.com/photo-1551650975-87deedd944c3?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1074&q=80" alt="Success Card" loading="lazy">
+                    </div>
+                    <div class="modal-details">
+                        <h4>Project Details</h4>
+                        <p>Created a corporate congratulatory card design for employee recognition. The clean layout with bold typography emphasizes the achievement while maintaining professionalism. The design includes space for personalized messages and can be easily adapted for various corporate recognition programs.</p>
+                        <div class="tech-list">
+                            <span class="tech-item">Adobe InDesign</span>
+                            <span class="tech-item">Corporate Design</span>
+                            <span class="tech-item">Print Ready</span>
+                            <span class="tech-item">Template</span>
+                        </div>
+                        <div class="download-options">
+                            <h5>Download Options:</h5>
+                            <div class="download-types">
+                                <span class="download-type">PDF (Print)</span>
+                                <span class="download-type">INDD</span>
+                                <span class="download-type">JPG</span>
+                                <span class="download-type">Editable Template</span>
+                            </div>
+                        </div>
+                        <div class="modal-btns">
+                            <button class="btn"><i class="fas fa-download"></i> Download</button>
+                            <button class="btn btn-outline"><i class="fas fa-share-alt"></i> Share</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal 4: Calendar -->
+    <div class="modal" id="modal-4">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3>Calendar</h3>
+                <button class="close-modal">&times;</button>
+            </div>
+            <div class="modal-body">
+                <div class="modal-row">
+                    <div class="modal-img">
+                        <img src="https://images.unsplash.com/photo-1518895949257-7621c3c786d7?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1188&q=80" alt="Calendar" loading="lazy">
+                    </div>
+                    <div class="modal-details">
+                        <h4>Project Details</h4>
+                        <p>Designed a 2024 corporate calendar featuring stunning landscape photography with clean typography. Each month highlights company milestones and holidays. The design includes both wall and desk calendar formats, with attention to grid alignment for optimal readability and space for notes.</p>
+                        <div class="tech-list">
+                            <span class="tech-item">Adobe InDesign</span>
+                            <span class="tech-item">Layout Design</span>
+                            <span class="tech-item">Print Production</span>
+                            <span class="tech-item">Grid Systems</span>
+                        </div>
+                        <div class="download-options">
+                            <h5>Download Options:</h5>
+                            <div class="download-types">
+                                <span class="download-type">PDF (Wall)</span>
+                                <span class="download-type">PDF (Desk)</span>
+                                <span class="download-type">INDD</span>
+                                <span class="download-type">JPG Preview</span>
+                            </div>
+                        </div>
+                        <div class="modal-btns">
+                            <button class="btn"><i class="fas fa-download"></i> Download</button>
+                            <button class="btn btn-outline"><i class="fas fa-share-alt"></i> Share</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal 5: Poster -->
+    <div class="modal" id="modal-5">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3>Poster</h3>
+                <button class="close-modal">&times;</button>
+            </div>
+            <div class="modal-body">
+                <div class="modal-row">
+                    <div class="modal-img">
+                        <img src="https://images.unsplash.com/photo-1561212024-cb9ad0c33195?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80" alt="Poster" loading="lazy">
+                    </div>
+                    <div class="modal-details">
+                        <h4>Project Details</h4>
+                        <p>Created a vibrant music concert promotional poster with dynamic typography and energetic colors. The design captures the essence of the musical performance while clearly communicating event details. The hierarchy of information ensures key details are immediately visible, with secondary information still accessible.</p>
+                        <div class="tech-list">
+                            <span class="tech-item">Adobe Photoshop</span>
+                            <span class="tech-item">Typography</span>
+                            <span class="tech-item">Event Design</span>
+                            <span class="tech-item">Visual Hierarchy</span>
+                        </div>
+                        <div class="download-options">
+                            <h5>Download Options:</h5>
+                            <div class="download-types">
+                                <span class="download-type">JPG (High Res)</span>
+                                <span class="download-type">PSD</span>
+                                <span class="download-type">PDF (Print)</span>
+                                <span class="download-type">Social Media Kit</span>
+                            </div>
+                        </div>
+                        <div class="modal-btns">
+                            <button class="btn"><i class="fas fa-download"></i> Download</button>
+                            <button class="btn btn-outline"><i class="fas fa-share-alt"></i> Share</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal 6: Business Card -->
+    <div class="modal" id="modal-6">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3>Business Card</h3>
+                <button class="close-modal">&times;</button>
+            </div>
+            <div class="modal-body">
+                <div class="modal-row">
+                    <div class="modal-img">
+                        <img src="https://images.unsplash.com/photo-1611162616305-c69b3fa7fbe0?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1074&q=80" alt="Business Card" loading="lazy">
+                    </div>
+                    <div class="modal-details">
+                        <h4>Project Details</h4>
+                        <p>Designed a minimalist business card for a creative director, featuring a clean layout with subtle embossing and spot UV coating for a premium tactile experience. The design balances white space with essential contact information, creating a memorable first impression that reflects the client's professional brand.</p>
+                        <div class="tech-list">
+                            <span class="tech-item">Adobe Illustrator</span>
+                            <span class="tech-item">Print Design</span>
+                            <span class="tech-item">Brand Identity</span>
+                            <span class="tech-item">Die-Cut</span>
+                        </div>
+                        <div class="download-options">
+                            <h5>Download Options:</h5>
+                            <div class="download-types">
+                                <span class="download-type">PDF (Print)</span>
+                                <span class="download-type">AI</span>
+                                <span class="download-type">JPG</span>
+                                <span class="download-type">Template</span>
+                            </div>
+                        </div>
+                        <div class="modal-btns">
+                            <button class="btn"><i class="fas fa-download"></i> Download</button>
+                            <button class="btn btn-outline"><i class="fas fa-share-alt"></i> Share</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal 7: Modern Portfolio Website -->
+    <div class="modal" id="modal-7">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3>Modern Portfolio Website</h3>
+                <button class="close-modal">&times;</button>
+            </div>
+            <div class="modal-body">
+                <div class="modal-row">
+                    <div class="modal-img">
+                        <img src="https://images.unsplash.com/photo-1559028012-481c04fa702d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1136&q=80" alt="Modern Portfolio Website" loading="lazy">
+                    </div>
+                    <div class="modal-details">
+                        <h4>Project Details</h4>
+                        <p>Developed a responsive portfolio website for a photographer, featuring a full-screen image gallery, smooth animations, and a contact form. The design emphasizes visual content with minimal distractions, optimized for fast loading times and excellent performance across all devices.</p>
+                        <div class="tech-list">
+                            <span class="tech-item">HTML5/CSS3</span>
+                            <span class="tech-item">JavaScript</span>
+                            <span class="tech-item">GSAP</span>
+                            <span class="tech-item">PHP</span>
+                            <span class="tech-item">Responsive Design</span>
+                        </div>
+                        <div class="download-options">
+                            <h5>Source Code:</h5>
+                            <div class="download-types">
+                                <span class="download-type">HTML Template</span>
+                                <span class="download-type">Full Project</span>
+                                <span class="download-type">Documentation</span>
+                            </div>
+                        </div>
+                        <div class="modal-btns">
+                            <a href="#" class="btn" target="_blank"><i class="fas fa-external-link-alt"></i> View Live</a>
+                            <a href="#" class="btn btn-outline"><i class="fab fa-github"></i> View Code</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal 8: Ronvick E-Commerce -->
+    <div class="modal" id="modal-8">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3>Ronvick E-Commerce</h3>
+                <button class="close-modal">&times;</button>
+            </div>
+            <div class="modal-body">
+                <div class="modal-row">
+                    <div class="modal-img">
+                        <img src="https://images.unsplash.com/photo-1551434678-e076c223a692?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80" alt="Ronvick E-Commerce" loading="lazy">
+                    </div>
+                    <div class="modal-details">
+                        <h4>Project Details</h4>
+                        <p>Built a gas cylinder e-commerce platform with product customization options, secure payment gateway integration, and an admin dashboard for inventory management. The platform serves both residential and commercial customers with features like delivery scheduling, cylinder tracking, and customer accounts.</p>
+                        <div class="tech-list">
+                            <span class="tech-item">React.js</span>
+                            <span class="tech-item">Node.js</span>
+                            <span class="tech-item">MongoDB</span>
+                            <span class="tech-item">Stripe API</span>
+                            <span class="tech-item">Redux</span>
+                        </div>
+                        <div class="download-options">
+                            <h5>Demo Access:</h5>
+                            <div class="download-types">
+                                <span class="download-type">Admin Demo</span>
+                                <span class="download-type">User Demo</span>
+                                <span class="download-type">Documentation</span>
+                            </div>
+                        </div>
+                        <div class="modal-btns">
+                            <a href="#" class="btn" target="_blank"><i class="fas fa-external-link-alt"></i> View Live</a>
+                            <a href="#" class="btn btn-outline"><i class="fab fa-github"></i> View Code</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal 9: Graphics Design Website -->
+    <div class="modal" id="modal-9">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3>Graphics Design Website</h3>
+                <button class="close-modal">&times;</button>
+            </div>
+            <div class="modal-body">
+                <div class="modal-row">
+                    <div class="modal-img">
+                        <img src="https://images.unsplash.com/photo-1467232004584-a241de8bcf5d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1169&q=80" alt="Graphics Design Website" loading="lazy">
+                    </div>
+                    <div class="modal-details">
+                        <h4>Project Details</h4>
+                        <p>Created a showcase website for a graphic design agency featuring portfolio galleries, client testimonials, and a project inquiry form. The design reflects the agency's creative style while maintaining excellent usability, with custom animations and a CMS for easy content updates by the agency team.</p>
+                        <div class="tech-list">
+                            <span class="tech-item">Vue.js</span>
+                            <span class="tech-item">CSS Grid</span>
+                            <span class="tech-item">Firebase</span>
+                            <span class="tech-item">Netlify</span>
+                            <span class="tech-item">Animations</span>
+                        </div>
+                        <div class="download-options">
+                            <h5>Resources:</h5>
+                            <div class="download-types">
+                                <span class="download-type">UI Kit</span>
+                                <span class="download-type">Template</span>
+                                <span class="download-type">Documentation</span>
+                            </div>
+                        </div>
+                        <div class="modal-btns">
+                            <a href="#" class="btn" target="_blank"><i class="fas fa-external-link-alt"></i> View Live</a>
+                            <a href="#" class="btn btn-outline"><i class="fab fa-github"></i> View Code</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal 10: Sesero Engineering -->
+    <div class="modal" id="modal-10">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3>Sesero Engineering</h3>
+                <button class="close-modal">&times;</button>
+            </div>
+            <div class="modal-body">
+                <div class="modal-row">
+                    <div class="modal-img">
+                        <img src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80" alt="Sesero Engineering" loading="lazy">
+                    </div>
+                    <div class="modal-details">
+                        <h4>Project Details</h4>
+                        <p>Developed a construction company website with project galleries, service descriptions, and a contact form. The responsive design works well on all devices and includes a blog section for company updates. The admin panel allows easy management of projects, team members, and blog content without technical knowledge.</p>
+                        <div class="tech-list">
+                            <span class="tech-item">WordPress</span>
+                            <span class="tech-item">PHP</span>
+                            <span class="tech-item">MySQL</span>
+                            <span class="tech-item">Elementor</span>
+                            <span class="tech-item">Custom Theme</span>
+                        </div>
+                        <div class="download-options">
+                            <h5>Resources:</h5>
+                            <div class="download-types">
+                                <span class="download-type">Theme Files</span>
+                                <span class="download-type">Plugins</span>
+                                <span class="download-type">Documentation</span>
+                            </div>
+                        </div>
+                        <div class="modal-btns">
+                            <a href="#" class="btn" target="_blank"><i class="fas fa-external-link-alt"></i> View Live</a>
+                            <a href="#" class="btn btn-outline"><i class="fab fa-github"></i> View Code</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal 11: Learnoford Unihub -->
+    <div class="modal" id="modal-11">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3>Learnoford Unihub</h3>
+                <button class="close-modal">&times;</button>
+            </div>
+            <div class="modal-body">
+                <div class="modal-row">
+                    <div class="modal-img">
+                        <img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1171&q=80" alt="Learnoford Unihub" loading="lazy">
+                    </div>
+                    <div class="modal-details">
+                        <h4>Project Details</h4>
+                        <p>Built an educational platform for students featuring course listings, video lectures, quizzes, and progress tracking. The platform includes user authentication and a payment system for premium content. The responsive design ensures accessibility on all devices, with features like offline content access and discussion forums.</p>
+                        <div class="tech-list">
+                            <span class="tech-item">Laravel</span>
+                            <span class="tech-item">Vue.js</span>
+                            <span class="tech-item">MySQL</span>
+                            <span class="tech-item">AWS S3</span>
+                            <span class="tech-item">PWA</span>
+                        </div>
+                        <div class="download-options">
+                            <h5>Demo Access:</h5>
+                            <div class="download-types">
+                                <span class="download-type">Student Demo</span>
+                                <span class="download-type">Instructor Demo</span>
+                                <span class="download-type">Admin Demo</span>
+                            </div>
+                        </div>
+                        <div class="modal-btns">
+                            <a href="#" class="btn" target="_blank"><i class="fas fa-external-link-alt"></i> View Live</a>
+                            <a href="#" class="btn btn-outline"><i class="fab fa-github"></i> View Code</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal 12: Pixel Vault -->
+    <div class="modal" id="modal-12">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3>Pixel Vault</h3>
+                <button class="close-modal">&times;</button>
+            </div>
+            <div class="modal-body">
+                <div class="modal-row">
+                    <div class="modal-img">
+                        <img src="https://images.unsplash.com/photo-1522542550221-31fd19575a2d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80" alt="Pixel Vault" loading="lazy">
+                    </div>
+                    <div class="modal-details">
+                        <h4>Project Details</h4>
+                        <p>Developed a digital asset management system for creative professionals to organize, share, and collaborate on design files. Features include version control, commenting, and integration with cloud storage providers. The system supports all major file formats with preview capabilities and advanced search functionality.</p>
+                        <div class="tech-list">
+                            <span class="tech-item">React.js</span>
+                            <span class="tech-item">Node.js</span>
+                            <span class="tech-item">MongoDB</span>
+                            <span class="tech-item">AWS</span>
+                            <span class="tech-item">WebSockets</span>
+                        </div>
+                        <div class="download-options">
+                            <h5>Resources:</h5>
+                            <div class="download-types">
+                                <span class="download-type">API Docs</span>
+                                <span class="download-type">SDK</span>
+                                <span class="download-type">Demo App</span>
+                            </div>
+                        </div>
+                        <div class="modal-btns">
+                            <a href="#" class="btn" target="_blank"><i class="fas fa-external-link-alt"></i> View Live</a>
+                            <a href="#" class="btn btn-outline"><i class="fab fa-github"></i> View Code</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Blog Section -->
+    <section class="blog" id="blog">
+        <div class="container">
+            <div class="section-title">
+                <h2>My Blog</h2>
+                <p>Read my latest insights on web development and graphic design</p>
+            </div>
+            <div class="blog-slider swiper">
+                <div class="swiper-wrapper">
+                    <div class="blog-slide swiper-slide">
+                        <div class="blog-img">
+                            <img src="https://images.unsplash.com/photo-1547658719-da2b51169166?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1064&q=80" alt="Blog Post" class="lazy" loading="lazy">
+                        </div>
+                        <div class="blog-content">
+                            <span class="blog-date"><i class="far fa-calendar-alt"></i> June 15, 2023</span>
+                            <h3>The Future of Responsive Web Design</h3>
+                            <p>Exploring emerging trends and technologies that are shaping the future of responsive web design, from CSS container queries to adaptive interfaces and beyond.</p>
+                            
+                            <div class="blog-tech">
+                                <span>CSS</span>
+                                <span>Responsive</span>
+                                <span>UI/UX</span>
+                                <span>Frontend</span>
+                            </div>
+                            
+                            <div class="blog-examples">
+                                <div class="blog-example">
+                                    <img src="https://images.unsplash.com/photo-1559028012-481c04fa702d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1136&q=80" alt="Example" loading="lazy">
+                                </div>
+                                <div class="blog-example">
+                                    <img src="https://images.unsplash.com/photo-1551434678-e076c223a692?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80" alt="Example" loading="lazy">
+                                </div>
+                                <div class="blog-example">
+                                    <img src="https://images.unsplash.com/photo-1467232004584-a241de8bcf5d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1169&q=80" alt="Example" loading="lazy">
+                                </div>
+                            </div>
+                            
+                            <a href="#" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                    
+                    <div class="blog-slide swiper-slide">
+                        <div class="blog-img">
+                            <img src="https://images.unsplash.com/photo-1542744173-8e7e53415bb0?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80" alt="Blog Post" class="lazy" loading="lazy">
+                        </div>
+                        <div class="blog-content">
+                            <span class="blog-date"><i class="far fa-calendar-alt"></i> May 28, 2023</span>
+                            <h3>Color Psychology in Branding</h3>
+                            <p>How different colors affect consumer perception and behavior, with practical tips for choosing the right color palette for your brand identity and marketing materials.</p>
+                            
+                            <div class="blog-tech">
+                                <span>Branding</span>
+                                <span>Color Theory</span>
+                                <span>Marketing</span>
+                                <span>Design</span>
+                            </div>
+                            
+                            <div class="blog-examples">
+                                <div class="blog-example">
+                                    <img src="https://images.unsplash.com/photo-1611162617213-7d7a39e9b1d7?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1074&q=80" alt="Example" loading="lazy">
+                                </div>
+                                <div class="blog-example">
+                                    <img src="https://images.unsplash.com/photo-1530103862676-de8c9debad1d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80" alt="Example" loading="lazy">
+                                </div>
+                                <div class="blog-example">
+                                    <img src="https://images.unsplash.com/photo-1551650975-87deedd944c3?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1074&q=80" alt="Example" loading="lazy">
+                                </div>
+                            </div>
+                            
+                            <a href="#" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                    
+                    <div class="blog-slide swiper-slide">
+                        <div class="blog-img">
+                            <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80" alt="Blog Post" class="lazy" loading="lazy">
+                        </div>
+                        <div class="blog-content">
+                            <span class="blog-date"><i class="far fa-calendar-alt"></i> May 10, 2023</span>
+                            <h3>JavaScript Frameworks Comparison 2023</h3>
+                            <p>A comprehensive comparison of React, Vue, Angular, and Svelte to help you choose the right framework for your next project based on performance, ecosystem, and learning curve.</p>
+                            
+                            <div class="blog-tech">
+                                <span>JavaScript</span>
+                                <span>React</span>
+                                <span>Vue</span>
+                                <span>Angular</span>
+                                <span>Svelte</span>
+                            </div>
+                            
+                            <div class="blog-examples">
+                                <div class="blog-example">
+                                    <img src="https://images.unsplash.com/photo-1627398242454-45a1465c2479?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1074&q=80" alt="Example" loading="lazy">
+                                </div>
+                                <div class="blog-example">
+                                    <img src="https://images.unsplash.com/photo-1633356122544-f134324a6cee?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80" alt="Example" loading="lazy">
+                                </div>
+                                <div class="blog-example">
+                                    <img src="https://images.unsplash.com/photo-1579468118864-1b9ea3c0db4a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80" alt="Example" loading="lazy">
+                                </div>
+                            </div>
+                            
+                            <a href="#" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                    
+                    <div class="blog-slide swiper-slide">
+                        <div class="blog-img">
+                            <img src="https://images.unsplash.com/photo-1467232004584-a241de8bcf5d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1169&q=80" alt="Blog Post" class="lazy" loading="lazy">
+                        </div>
+                        <div class="blog-content">
+                            <span class="blog-date"><i class="far fa-calendar-alt"></i> April 22, 2023</span>
+                            <h3>Minimalism in Web Design</h3>
+                            <p>How to implement minimalist design principles to create clean, functional websites that enhance user experience and performance while reducing cognitive load.</p>
+                            
+                            <div class="blog-tech">
+                                <span>UI/UX</span>
+                                <span>Design</span>
+                                <span>Performance</span>
+                                <span>Minimalism</span>
+                            </div>
+                            
+                            <div class="blog-examples">
+                                <div class="blog-example">
+                                    <img src="https://images.unsplash.com/photo-1518895949257-7621c3c786d7?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1188&q=80" alt="Example" loading="lazy">
+                                </div>
+                                <div class="blog-example">
+                                    <img src="https://images.unsplash.com/photo-1561212024-cb9ad0c33195?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80" alt="Example" loading="lazy">
+                                </div>
+                                <div class="blog-example">
+                                    <img src="https://images.unsplash.com/photo-1611162616305-c69b3fa7fbe0?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1074&q=80" alt="Example" loading="lazy">
+                                </div>
+                            </div>
+                            
+                            <a href="#" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                    
+                    <div class="blog-slide swiper-slide">
+                        <div class="blog-img">
+                            <img src="https://images.unsplash.com/photo-1541462608143-67571c6738dd?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80" alt="Blog Post" class="lazy" loading="lazy">
+                        </div>
+                        <div class="blog-content">
+                            <span class="blog-date"><i class="far fa-calendar-alt"></i> April 5, 2023</span>
+                            <h3>Typography Trends for 2023</h3>
+                            <p>Exploring the latest typography trends in web and graphic design, from variable fonts to kinetic typography and how to implement them effectively in your projects.</p>
+                            
+                            <div class="blog-tech">
+                                <span>Typography</span>
+                                <span>Web Design</span>
+                                <span>Print Design</span>
+                                <span>Trends</span>
+                            </div>
+                            
+                            <div class="blog-examples">
+                                <div class="blog-example">
+                                    <img src="https://images.unsplash.com/photo-1547658719-da2b51169166?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1064&q=80" alt="Example" loading="lazy">
+                                </div>
+                                <div class="blog-example">
+                                    <img src="https://images.unsplash.com/photo-1542744173-8e7e53415bb0?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80" alt="Example" loading="lazy">
+                                </div>
+                                <div class="blog-example">
+                                    <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80" alt="Example" loading="lazy">
+                                </div>
+                            </div>
+                            
+                            <a href="#" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                    
+                    <div class="blog-slide swiper-slide">
+                        <div class="blog-img">
+                            <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80" alt="Blog Post" class="lazy" loading="lazy">
+                        </div>
+                        <div class="blog-content">
+                            <span class="blog-date"><i class="far fa-calendar-alt"></i> March 18, 2023</span>
+                            <h3>Building Accessible Web Applications</h3>
+                            <p>Practical techniques and tools to ensure your web applications are accessible to all users, regardless of ability or device, with code examples and testing methodologies.</p>
+                            
+                            <div class="blog-tech">
+                                <span>Accessibility</span>
+                                <span>WCAG</span>
+                                <span>ARIA</span>
+                                <span>Inclusive Design</span>
+                            </div>
+                            
+                            <div class="blog-examples">
+                                <div class="blog-example">
+                                    <img src="https://images.unsplash.com/photo-1467232004584-a241de8bcf5d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1169&q=80" alt="Example" loading="lazy">
+                                </div>
+                                <div class="blog-example">
+                                    <img src="https://images.unsplash.com/photo-1541462608143-67571c6738dd?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80" alt="Example" loading="lazy">
+                                </div>
+                                <div class="blog-example">
+                                    <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80" alt="Example" loading="lazy">
+                                </div>
+                            </div>
+                            
+                            <a href="#" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-pagination"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials" id="testimonials">
+        <div class="container">
+            <div class="section-title">
+                <h2>Client Testimonials</h2>
+                <p>What my clients say about my work and services</p>
+            </div>
+            <div class="testimonial-slider swiper">
+                <div class="swiper-wrapper">
+                    <div class="testimonial-slide swiper-slide">
+                        <div class="testimonial-quote">
+                            <i class="fas fa-quote-left"></i>
+                        </div>
+                        <p class="testimonial-content">Macford delivered an exceptional website for our business. His attention to detail and understanding of our brand vision resulted in a digital presence that perfectly represents our company. The site has significantly increased our online engagement and customer inquiries.</p>
+                        <div class="testimonial-author">
+                            <div class="author-img">
+                                <img src="https://randomuser.me/api/portraits/women/43.jpg" alt="Client" loading="lazy">
+                            </div>
+                            <div class="author-info">
+                                <h4>Sarah Johnson</h4>
+                                <p>CEO, TechSolutions Ltd.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testimonial-slide swiper-slide">
+                        <div class="testimonial-quote">
+                            <i class="fas fa-quote-left"></i>
+                        </div>
+                        <p class="testimonial-content">Working with Macford on our branding materials was a pleasure. He took our vague ideas and transformed them into stunning visual designs that exceeded our expectations. His professionalism and creativity are unmatched, and we've received countless compliments on our new brand identity.</p>
+                        <div class="testimonial-author">
+                            <div class="author-img">
+                                <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="Client" loading="lazy">
+                            </div>
+                            <div class="author-info">
+                                <h4>Michael Brown</h4>
+                                <p>Marketing Director, Innovate Corp</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testimonial-slide swiper-slide">
+                        <div class="testimonial-quote">
+                            <i class="fas fa-quote-left"></i>
+                        </div>
+                        <p class="testimonial-content">The e-commerce platform Macford developed for us has revolutionized our business operations. It's user-friendly, visually appealing, and has all the functionality we needed. His technical expertise and problem-solving skills are impressive, and he was always available to address our concerns.</p>
+                        <div class="testimonial-author">
+                            <div class="author-img">
+                                <img src="https://randomuser.me/api/portraits/women/65.jpg" alt="Client" loading="lazy">
+                            </div>
+                            <div class="author-info">
+                                <h4>Emily Rodriguez</h4>
+                                <p>Owner, Ronvick Gas</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testimonial-slide swiper-slide">
+                        <div class="testimonial-quote">
+                            <i class="fas fa-quote-left"></i>
+                        </div>
+                        <p class="testimonial-content">Macford's designs for our marketing materials have consistently received praise from our clients. He has an incredible ability to translate complex concepts into clean, compelling visuals that communicate effectively. His work has elevated our brand perception in the market.</p>
+                        <div class="testimonial-author">
+                            <div class="author-img">
+                                <img src="https://randomuser.me/api/portraits/men/75.jpg" alt="Client" loading="lazy">
+                            </div>
+                            <div class="author-info">
+                                <h4>David Wilson</h4>
+                                <p>Creative Director, BrandMasters</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-pagination"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+        <div class="container">
+            <div class="section-title">
+                <h2>Get In Touch</h2>
+                <p>Have a project in mind or want to discuss potential collaboration? Feel free to reach out!</p>
+            </div>
+            <div class="contact-container">
+                <div class="contact-info">
+                    <h3>Contact Information</h3>
+                    <div class="contact-details">
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <div class="contact-text">
+                                <h4>Email</h4>
+                                <a href="mailto:techstarford@gmail.com">techstarford@gmail.com</a>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-phone"></i>
+                            </div>
+                            <div class="contact-text">
+                                <h4>Phone</h4>
+                                <a href="tel:+256770509867">+256 770 509 867</a><br>
+                                <a href="tel:+256784349428">+256 784 349 428</a>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </div>
+                            <div class="contact-text">
+                                <h4>Location</h4>
+                                <p>Remote (Based in Uganda)</p>
+                            </div>
+                        </div>
+                    </div>
+                    <h3>Follow Me</h3>
+                    <div class="contact-social">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-pinterest"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                <div class="contact-form">
+                    <h3>Send Me a Message</h3>
+                    <form id="contactForm">
+                        <div class="form-group">
+                            <label for="name">Your Name</label>
+                            <input type="text" id="name" class="form-control" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Your Email</label>
+                            <input type="email" id="email" class="form-control" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="subject">Subject</label>
+                            <input type="text" id="subject" class="form-control" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Your Message</label>
+                            <textarea id="message" class="form-control" required></textarea>
+                        </div>
+                        <button type="submit" class="btn">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-container">
+                <div class="footer-col">
+                    <h3>Macford Isaiah</h3>
+                    <p>Full-stack web developer and graphic designer creating beautiful, functional digital experiences that help businesses thrive online.</p>
+                </div>
+                <div class="footer-col">
+                    <h3>Quick Links</h3>
+                    <ul class="footer-links">
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#portfolio">Portfolio</a></li>
+                        <li><a href="#blog">Blog</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h3>Services</h3>
+                    <ul class="footer-links">
+                        <li><a href="#">Web Development</a></li>
+                        <li><a href="#">UI/UX Design</a></li>
+                        <li><a href="#">Graphic Design</a></li>
+                        <li><a href="#">Branding</a></li>
+                        <li><a href="#">Consulting</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h3>Newsletter</h3>
+                    <p>Subscribe to my newsletter for the latest updates and insights on web development and design.</p>
+                    <form class="newsletter-form">
+                        <input type="email" placeholder="Your Email" class="form-control">
+                        <button type="submit" class="btn">Subscribe</button>
+                    </form>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2023 Macford Isaiah. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <div class="back-to-top">
+        <i class="fas fa-arrow-up"></i>
+    </div>
+</body>
+</html>
